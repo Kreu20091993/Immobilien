@@ -18,11 +18,19 @@ public class RoB extends AppCompatActivity {
         setContentView(R.layout.activity_ro_b);
 
         Button rentButton = (Button)findViewById(R.id.rentButton);
+        Button buyButton = (Button)findViewById(R.id.buyButton);
 
         rentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RoB.this, rent_view.class));
+            }
+        });
+
+        buyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RoB.this, buy_view.class));
             }
         });
     }

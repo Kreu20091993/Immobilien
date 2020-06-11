@@ -69,6 +69,7 @@ public class filter_page extends AppCompatActivity {
                 boolean showAll = showAllButton.isChecked();
                 filter tempFilter = new filter(location, radius, prize, size, onlyFav, showAll);
 
+                startActivity(new Intent(filter_page.this, rent_view.class));
             }
         });
 
